@@ -1,13 +1,44 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+}
+
+#root {
+  /*flex-grow
+  It defines the ability for a flex item to grow if necessary. 
+  It accepts a unitless value that serves as a proportion. 
+  It dictates what amount of the available space inside the flex container the item should take up.
+  */
+  flex-grow: 1;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/*
+This should keep the same height for all the components
+*/
+.App,
+.Navbar,
+.Home,
+.SignUp,
+.Services,
+.Products,
+.NotFound,
+.Footer {
+  width: 100%;
+  flex-grow: 1;
 }

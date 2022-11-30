@@ -1,0 +1,45 @@
+.Destinations {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  padding-top: 3rem;
+}
+
+.Destinations_title {
+  text-align: center;
+  font-size: 1.6em;
+}
+
+.Destinations_cards {
+  width: 100%;
+  padding: 3rem 8rem 1rem 8rem;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-gap: 2rem;
+}
+
+.Destinations_cards section:first-child {
+  grid-column: 1 / span 9;
+}
+
+.Destinations_cards section:nth-child(2) {
+  grid-column: span 9;
+}
+
+.Destinations section:nth-child(n + 3) {
+  grid-column: span 6;
+}
+.Destinations section:nth-child(n + 3) img {
+  height: 280px;
+}
+
+@media only screen and (max-width: 820px) {
+  .Destinations_cards {
+    padding: 3rem 2rem 1rem 2rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .Destinations section:nth-child(n + 1) {
+    grid-column: 1 / span 4;
+  }
+}

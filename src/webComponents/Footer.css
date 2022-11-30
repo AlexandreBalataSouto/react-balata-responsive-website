@@ -1,0 +1,139 @@
+.Footer {
+  position: relative;
+  background-color: #161616;
+  color: white;
+}
+
+.Footer_newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.Footer_newsletter * {
+  margin-top: 0.6rem;
+}
+
+.Footer_newsletter h1 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.Footer_newsletter p {
+  font-weight: bold;
+}
+
+.Footer_newsletter_input input {
+  padding: 0.6rem;
+  outline: none;
+}
+.Footer_newsletter_input button {
+  margin-left: 0.2rem;
+  padding: 0.6rem 1rem 0.6rem 1rem;
+  color: white;
+  border: 1px solid white;
+  background-color: #161616;
+  font-weight: bold;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.Footer_newsletter_input button:hover {
+  color: #161616;
+  background-color: white;
+}
+
+.Footer_lists {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.Footer_lists ul {
+  list-style: none;
+  margin-right: 4rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.Footer_lists ul li {
+  font-size: 0.8em;
+  margin-bottom: 0.4rem;
+}
+
+.Footer_lists ul li:first-child {
+  font-size: 1.1em;
+  margin-bottom: 1rem;
+}
+
+.Footer_credits {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.Footer_credits_logo {
+  font-size: 1.6em;
+}
+
+.Footer_credits_copyright {
+  font-size: 0.8em;
+  margin-left: 12rem;
+  margin-right: 10rem;
+}
+
+.Footer_credits_icons {
+  margin-right: 2rem;
+}
+
+.Footer_credits_icons i {
+  font-size: 1.2em;
+  margin-left: 2rem;
+}
+
+@media only screen and (max-width: 760px) {
+  .Footer_newsletter_input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Footer_newsletter_input button {
+    margin-left: 0rem;
+    padding: 0.6rem 1rem 0.6rem 1rem;
+  }
+  .Footer_lists {
+    grid-template-columns: auto auto;
+  }
+
+  .Footer_lists ul:nth-child(2) {
+    order: 1;
+  }
+
+  .Footer_lists ul:nth-child(4) {
+    order: 1;
+  }
+
+  .Footer_lists ul {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+  .Footer_credits {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .Footer_credits_copyright {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .Footer_credits div {
+    margin-bottom: 1rem;
+  }
+}

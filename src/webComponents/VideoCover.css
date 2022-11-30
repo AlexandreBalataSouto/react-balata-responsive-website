@@ -1,0 +1,78 @@
+.VideoCover {
+  width: 100%;
+  height: 100%;
+}
+.VideoCover_video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+.VideoCover_title {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.VideoCover_title h1 {
+  text-align: center;
+  font-size: 4em;
+}
+.VideoCover_title p {
+  font-size: 1.4em;
+}
+
+.VideoCover_title_buttons {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.VideoCover_title_buttons button {
+  margin: 0.2rem;
+  padding: 0.6rem 1rem 0.6rem 1rem;
+  cursor: pointer;
+  font-weight: 700;
+  border: 1px solid white;
+  transition: 0.4s;
+}
+
+.VideoCover_title_buttons button:first-child {
+  background: none;
+  border: 1px solid white;
+  color: white;
+}
+
+.VideoCover_title_buttons button:first-child:hover {
+  background-color: white;
+  color: black;
+}
+
+.VideoCover_title_buttons button:nth-child(2):hover {
+  background: none;
+  color: white;
+}
+
+@media only screen and (max-width: 642px) {
+  .VideoCover_title h1 {
+    font-size: 2.6em;
+  }
+  .VideoCover_title_buttons {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 418px) {
+  .VideoCover_title h1 {
+    font-size: 1.6em;
+  }
+  .VideoCover_title p {
+    font-size: 1.2em;
+  }
+}
